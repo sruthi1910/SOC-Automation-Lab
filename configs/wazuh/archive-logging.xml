@@ -1,0 +1,4 @@
+<!-- Enable in /var/ossec/etc/ossec.conf on Wazuh Manager -->
+
+<logall>yes</logall>
+<logall_json>yes</logall_json>
