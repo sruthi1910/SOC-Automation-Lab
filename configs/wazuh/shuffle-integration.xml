@@ -1,0 +1,10 @@
+<!-- Shuffle SOAR Integration -->
+<!-- Add this block to /var/ossec/etc/ossec.conf -->
+<!-- between the <global> and <alerts> sections -->
+
+<integration>
+  <name>shuffle</name>
+  <hook_url>https://shuffler.io/api/v1/hooks/webhook_4111113f-0f3c-4fea-904a-c19a76b47b2c</hook_url>
+  <rule_id>100002</rule_id>
+  <alert_format>json</alert_format>
+</integration>
