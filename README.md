@@ -98,3 +98,27 @@ TheHive (alert/case created) + Email notification to analyst
 - [Shuffle Documentation](https://shuffler.io/docs)
 - [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
 - [MITRE ATT&CK T1003](https://attack.mitre.org/techniques/T1003/)
+
+## Project Status
+✅ Completed
+
+## Proof of Concept Results
+- Sysmon telemetry successfully ingested into Wazuh
+- Custom Mimikatz detection rule (ID 100002) firing correctly
+- Shuffle webhook receiving Wazuh alerts automatically
+- SHA256 hash extraction working via regex
+- VirusTotal API enrichment returning results
+- TheHive alert created automatically with full context
+- Email notification sent to SOC analyst
+
+## Repository Structure
+```
+SOC-Automation-Lab/
+├── README.md
+└── configs/
+    └── wazuh/
+        ├── local_rules.xml
+        ├── shuffle-integration.xml
+        ├── ossec-sysmon.xml
+        └── archive-logging.xml
+```
